@@ -1,5 +1,5 @@
 import React from "react";
-
+import CardWitget from './CartWidget';
 import './styles/NavBar.css';
 
 const NavBar = () => {
@@ -7,11 +7,10 @@ const NavBar = () => {
     'https://i.pinimg.com/236x/a3/61/6a/a3616a4a3ff8f55d64838352920fb12e.jpg';
     return (
         <header className="header">
-      {/* logo de la marca */}
-      <div className="logo-container">
-        <img src={brand} alt="logo" />
-      </div>
-
+        
+        <div className="logo-container">
+          <img src={brand} alt="logo" />
+        </div>
       {/* links de navegación */}
       <nav>
         <ul className="nav-container">
@@ -29,7 +28,11 @@ const NavBar = () => {
           </li>
         </ul>
       </nav>
-      </header>
+      <CardWitget/>
+      {/* logo de la marca */}
+      
+
+    </header>
     );
 };
 
