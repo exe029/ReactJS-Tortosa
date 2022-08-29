@@ -1,6 +1,6 @@
 import React from "react";
 import { FaCartPlus } from "react-icons/fa";
-import './styles/CardWitget.css';
+
 
 
 const CardWitget = () => {

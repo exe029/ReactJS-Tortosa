@@ -1,7 +1,6 @@
 import { useState } from 'react'
-import './App.css'
-import NavBar from './Components.js/NavBar';
-import ItemListContainer from './Components.js/ItemListContainer';
+import NavBar from './Components/NavBar';
+import ItemListContainer from './Components/ItemListContainer';
 
 
 
@@ -9,7 +8,7 @@ export default function App() {
   return (
     <>
       <NavBar />
-      <ItemListContainer title="GAMER" />
+      <ItemListContainer title="GAMING ZONE" />
     </>
   );
 }

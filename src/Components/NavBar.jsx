@@ -1,19 +1,18 @@
 import React from "react";
 import CardWitget from './CartWidget';
-import './styles/NavBar.css';
+import brand from '../assets/logo_gamer.svg';
 
 const NavBar = () => {
-    const brand =
-    'https://i.pinimg.com/236x/a3/61/6a/a3616a4a3ff8f55d64838352920fb12e.jpg';
+   
     return (
-        <header className="header">
+        <header className="w-full flex justify-between items-center py-6 px-4 bg-[url('https://images.pexels.com/photos/3165335/pexels-photo-3165335.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')]">
         
-        <div className="logo-container">
-          <img src={brand} alt="logo" />
+        <div className="cursor-pointer">
+          <img className="w-14 h-14 " src={brand} alt="logo" />
         </div>
       {/* links de navegación */}
       <nav>
-        <ul className="nav-container">
+        <ul className="flex text-white gap-6 text-lg font-semibold">
           <li>
             <a href="/">Inicio</a>
           </li>
