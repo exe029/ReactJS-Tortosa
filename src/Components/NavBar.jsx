@@ -14,16 +14,16 @@ const NavBar = () => {
       <nav>
         <ul className="flex text-white gap-6 text-lg font-semibold">
           <li>
-            <a href="/">Inicio</a>
+            Inicio
           </li>
           <li>
-            <a href="/">Juegos</a>
+            Juegos
           </li>
           <li>
-            <a href="/">Consolas</a>
+            Consolas
           </li>
           <li>
-            <a href="/">Contacto</a>
+            Contacto
           </li>
         </ul>
       </nav>
