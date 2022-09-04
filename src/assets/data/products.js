@@ -1,0 +1,38 @@
+export const arrayProducts = [
+    {
+        id:1,
+        name:'Uncharted',
+        category:'Disparos',
+        price:'40 usd',
+        img:'https://gorilagames.com/img/Public/1019-producto-uncharted-6535.jpg',
+        description:'Lorem ipsum dolor',
+        platforms: ['ps5 ',' -xbox- ',' steam'],
+    },
+    {
+        id:2,
+        name:'Red Dead',
+        category:'Disparos',
+        price:'35 usd',
+        img:'https://gorilagames.com/img/Public/1019-producto-red-dead-redemption-2-ps4-1383.jpg',
+        description:'Lorem ipsum dolor',
+        platforms: ['ps5 ',' -xbox- ',' steam'],
+    },
+    {
+        id:3,
+        name:'Fifa 23',
+        category:'Sports',
+        price:'60 usd',
+        img:'https://gorilagames.com/img/Public/1019-producto-fifa-23-ps4-digital-5875.jpg',
+        description:'Lorem ipsum dolor',
+        platforms: ['ps5 ',' -xbox- ',' steam'],
+    },
+    {
+        id:4,
+        name:'NBA 2K 22',
+        category:'Sports',
+        price:65,
+        img:'https://gorilagames.com/img/Public/1019-producto-nba-2k22-ps4-3847.jpg',
+        description:'Lorem ipsum dolor',
+        platforms: ['ps5 ',' -xbox- ',' steam'],
+    },
+]

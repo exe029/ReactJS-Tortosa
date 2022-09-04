@@ -7,7 +7,7 @@ const CardWitget = () => {
     return (
         <div className="cart-widget">
             <div><FaCartPlus size="2rem" color="white"/></div>
-         </div>
+        </div>
     );
 };
 
