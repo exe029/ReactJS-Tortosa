@@ -1,6 +1,7 @@
 import React,{useState, useEffect} from 'react'
 import Item from './Item'
 import { arrayProducts } from '../assets/data/products'
+import PacmanLoader from "react-spinners/PacmanLoader";
 
 const ItemList = () => {
 
@@ -26,10 +27,10 @@ const ItemList = () => {
   return (
     <div className='grid grid-cols-4 gap-4'>
 
-        { 
+        {
             products.length > 0
             ? products.map( product => <Item key={product.id} product={product} />)
-            : <p> Cargando productos... </p>
+            : <PacmanLoader color='#b723c1'/>
         }
 
     </div>
