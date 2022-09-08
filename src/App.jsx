@@ -1,11 +1,7 @@
-import { useState } from 'react'
 import NavBar from './Components/NavBar';
 import ItemListContainer from './Components/ItemListContainer';
-import ItemCount from './Components/ItemCount';
 import React from 'react';
-import { ToastContainer, toast } from 'react-toastify';
-
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 export default function App() {
   
@@ -13,9 +9,9 @@ export default function App() {
   
   return (
     <>
+    
       <NavBar />
       <ItemListContainer title="GAMING ZONE" />
-
       
     </>
   );
