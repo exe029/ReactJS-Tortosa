@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ItemList from './ItemList';
 import { arrayProducts } from '../assets/data/products';
-import ItemDetailContainer from './ItemDetailContainer';
+
 
 const ItemListContainer = ({ title }) => {
   const [products, setProducts] = useState([]);
