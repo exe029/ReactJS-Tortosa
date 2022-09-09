@@ -1,10 +1,8 @@
 import React from 'react'
-import ItemCount from './ItemCount'
+
 
 const Item = ({ product }) => {
-    const onAdd = (qty) => {
-        alert(`Agregaste ${qty} productos`)
-    };
+   
   return (
     
 
@@ -17,7 +15,7 @@ const Item = ({ product }) => {
             <h3 className='bg-slate-300 w-full text-center uppercase'>{ product.category }</h3>
             <h3>{ product.description }</h3>
             <h3 className='bg-slate-600 w-full text-center uppercase'>{ product.platforms }</h3>
-            <ItemCount onAdd={onAdd} initial={1} stock={4} />
+            
         </div>
         
     

@@ -1,20 +1,26 @@
-import React from "react";
-import Detail from "./Detail";
+import React from 'react';
+import ItemCount from './ItemCount';
 
-const ItemDetail = ({details}) => {
-    
-    return (
-        
-        <div className="grid grid-cols-4 gap-4 w-3/4">
-            {details.map ((detail) => <Detail key={detail.id} detail={detail} />)}  
-            
-        </div>
-
-
-    );
-
-
-    
-
+const ItemDetail = ({ product }) => {
+  const onAdd = (qty) => {
+    alert(`Agregaste ${qty} productos`)
 };
- export default ItemDetail;
+  return (
+    <div className="flex w-96 bg-sky-800 gap-4 items-center ">
+      <div className="w-52 h-96 rounded-xl overflow-hidden">
+        <img className="w-full h-full object-fill p-1" src={product.img} alt="" />
+      </div>
+
+      <div className="flex-col ">
+        <h2 className="text-2xl font-bold text-white">{product.name}</h2>
+        <h2 className="text-2xl text-black">{product.category}</h2>
+        <p>{product.description}</p>
+        <h2 className="text-2xl font-semibold text-green-500">{product.price}</h2>
+        <div className="p-1">
+        <ItemCount onAdd={onAdd} initial={1} stock={4} />
+        </div>
+      </div>
+    </div>
+  );
+};
+export default ItemDetail;

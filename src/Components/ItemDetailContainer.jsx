@@ -1,44 +1,48 @@
+import { useEffect } from 'react';
+import { useState } from 'react';
+import ItemDetail from './ItemDetail';
+import { arrayProducts } from '../assets/data/products';
+import PacmanLoader from 'react-spinners/PacmanLoader';
 
-import { useEffect } from "react";
-import { useState } from "react";
-import ItemDetail from "./ItemDetail";
+const ItemDetailContainer = ({ id }) => {
+  const [product, setProduct] = useState(null);
 
+  const getProducts = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (true) {
+        resolve(arrayProducts);
+      } else {
+        reject('La promesa no se puedo resolver');
+      }
+    }, 5000);
+  });
 
-const ItemDetailContainer = () => {
-    const [details, setDetails] = useState ([]);
+  const getProductById = async (id) => {
+    try {
+      const response = await getProducts;
+      console.log(response);
+      const result = await response.find((el) => el.id === id);
+      setProduct(result);
+    } catch (error) {
+      console.error(error);
+    }
+  };
 
-    const getDetails = new Promise((resolve, reject) => {
-        setTimeout(() => {
-          if (true) {
-            resolve(details);
-          } else {
-            reject('La promesa no se puedo resolver');
-          }
-        }, 4000);
-      });
+  useEffect(() => {
+    getProductById(id);
+  }, [id]);
 
-    useEffect (() => {
-        getDetails
-        fetch("https://api.mercadolibre.com/sites/MLA/search?q=PCgamer&limit=4")
-        .then((respuesta) => respuesta.json())
-        .then((data) => {setDetails(data.results);
-
-        });
-        
-
-    }, []);
-
-    console.log(details);
-    return (
-
-        <div className="flex flex-col items-center">
-            <ItemDetail details={details} />
-        </div>
-
-
-    );
-
-
-
+  return (
+    <div className="flex flex-col items-center">
+      <h2 className="text-3xl font-semibold text-white mx-auto my-6">
+        Detalle de producto
+      </h2>
+      {product ? (
+        <ItemDetail product={product} />
+      ) : (
+        <PacmanLoader color="#b723c1" />
+      )}
+    </div>
+  );
 };
- export default ItemDetailContainer;
+export default ItemDetailContainer;

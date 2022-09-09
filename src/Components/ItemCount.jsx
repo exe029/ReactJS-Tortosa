@@ -10,17 +10,17 @@ const ItemCount = ({ onAdd, initial, stock }) => {
       };
     
       return (
-      <div className="flex flex-col justify-center items-center w-32 h-1/3 py-4 px-4  rounded-md shadow-md bg-gradient-to-r from-violet-300 ">
-        <div className="flex flex-row justify-center items-center w-22 h-20 font-medium text-2xl  border-b-4 border-t-4 border-l-4 border-r-4 border-violet-500">
+      <div className="flex flex-col justify-center items-center w-20 h-20 rounded-md shadow-md bg-black ">
+        <div className="flex flex-row justify-center items-center bg-violet-600">
             <button
-              className="disabled:opacity-40 text-lg text-left border-solid border-b-2 pb-1 m-3 py-1 px-2 bg-violet-600 capitalize text-white rounded-full shadow-sm cursor-pointer hover:shadow-md hover:bg-violet-500 transition active:bg-violet-400 active:shadow-none"
+              className="disabled:opacity-40 m-1 px-1  text-white rounded-full  cursor-pointer hover:shadow-md hover:bg-violet-500 transition active:bg-violet-400 active:shadow-none"
               onClick={() => addProduct(-1)}
               disabled={qty === initial}>
               -
             </button>
             <span className="text-center">{qty}</span>
             <button
-            className="disabled:opacity-40 text-lg text-left border-solid border-b-2 pb-1 m-3 py-1 px-2 bg-violet-600 capitalize text-white rounded-full shadow-sm cursor-pointer hover:shadow-md hover:bg-violet-500 transition active:bg-violet-400 active:shadow-none"
+            className="disabled:opacity-40   m-1 px-1  text-white rounded-full cursor-pointer hover:shadow-md hover:bg-violet-500 transition active:bg-violet-400 active:shadow-none"
             onClick={() => addProduct(+1)}
             disabled={qty === stock}>
             +
@@ -28,7 +28,7 @@ const ItemCount = ({ onAdd, initial, stock }) => {
         </div>
 
         <button
-          className="bg-violet-600 font-bold text-base mt-5 mb-5 py-3 px-4 text-white rounded cursor-pointer disabled:opacity-40"
+          className="bg-violet-600 font-bold text-base mt-1 p-1 text-black rounded cursor-pointer disabled:opacity-40"
           onClick={() => {
           onAdd(qty);}}
           disabled={stock === 0 ? true : null}>
