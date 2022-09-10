@@ -5,9 +5,9 @@ import ItemDetailContainer from "../Components/ItemDetailContainer";
 const DetailPage = () => {
     let {product} = useParams();
     return (
-        <main>
+        <main className="h-full pb-2 bg-black ">
             <ItemDetailContainer product={product} />
-            <Link to="/">Home</Link>
+           
 
         </main>
 

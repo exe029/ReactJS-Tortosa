@@ -1,9 +1,10 @@
 import NavBar from './Components/NavBar';
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import DetailPage from './Pages/DetailPage';
 import Home from './Pages/Home';
 import Footer from './Components/Footer';
+import ItemListContainer from './Components/ItemListContainer';
+import DetailPage from './Pages/DetailPage';
 
 export default function App() {
   return (
@@ -11,15 +12,15 @@ export default function App() {
         <NavBar />
       <Routes>
         <Route exact path='/' element={<Home/>}/>
-        <Route path="/detail/:product" element={<DetailPage />} />
-        
+        <Route path="/detail/:productsid" element={<DetailPage />} />
+        <Route exact path='/Juegos/:categoryid' element={<ItemListContainer/>}/>
+        <Route exact path='/Consolas/:categoryid' element={<ItemListContainer/>}/>
 
-      
-        
         
       
       </Routes>
-      <footer/>
+        <Footer />
+      
       </BrowserRouter>
   );
 }

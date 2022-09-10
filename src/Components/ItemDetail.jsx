@@ -6,7 +6,7 @@ const ItemDetail = ({ product }) => {
     alert(`Agregaste ${qty} productos`)
 };
   return (
-    <div className="flex w-96 bg-sky-800 gap-4 items-center ">
+    <div className="flex w-96 bg-sky-800 gap-6 items-center p-1">
       <div className="w-52 h-96 rounded-xl overflow-hidden">
         <img className="w-full h-full object-fill p-1" src={product.img} alt="" />
       </div>

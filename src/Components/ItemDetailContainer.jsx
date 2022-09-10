@@ -3,37 +3,31 @@ import { useState } from 'react';
 import ItemDetail from './ItemDetail';
 import { arrayProducts } from '../assets/data/products';
 import PacmanLoader from 'react-spinners/PacmanLoader';
+import { useParams } from 'react-router-dom';
 
 const ItemDetailContainer = ({ id }) => {
   const [product, setProduct] = useState(null);
+  
+  const {productsid} = useParams()
 
-  const getProducts = new Promise((resolve, reject) => {
+  
+  useEffect(() => {
     
+    const getProducts = new Promise((resolve, reject) => {
+    setTimeout(() => {
       if (true) {
         resolve(arrayProducts);
       } else {
-        reject('La promesa no se puedo resolver');
-      }
-  
-  });
+          reject('La promesa no se puedo resolver');
+        }
+      }, 1000);
+    });
 
-  const getProductById = async (id) => {
-    try {
-      const response = await getProducts;
-      console.log(response);
-      const result = await response.find((el) => el.id === id);
-      setProduct(result);
-    } catch (error) {
-      console.error(error);
-    }
-  };
-
-  useEffect(() => {
-    getProductById(id);
-  }, [id]);
+    getProducts.then(res =>setProduct(res.find(arrayProducts => arrayProducts.id === parseInt(productsid))))
+  }, []);
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center bg-black pb-6">
       <h2 className="text-3xl font-semibold text-white mx-auto my-6">
         Detalle de producto
       </h2>
