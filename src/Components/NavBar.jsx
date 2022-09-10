@@ -1,6 +1,7 @@
 import React from "react";
 import CardWitget from './CartWidget';
 import brand from '../assets/logo_gamer.svg';
+import { Link, NavLink } from 'react-router-dom';
 
 const NavBar = () => {
    
@@ -14,16 +15,16 @@ const NavBar = () => {
       <nav>
         <ul className="flex text-white gap-6 text-lg font-semibold">
           <li>
-            Inicio
+          <NavLink to="/">Inicio</NavLink>
           </li>
           <li>
-            Juegos
+          <NavLink to="/">Juegos</NavLink>
           </li>
           <li>
-            Consolas
+          <NavLink to="/">Consolas</NavLink>
           </li>
           <li>
-            Contacto
+          <NavLink to="/">Contacto</NavLink>
           </li>
         </ul>
       </nav>

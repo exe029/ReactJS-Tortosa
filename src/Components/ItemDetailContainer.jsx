@@ -8,13 +8,13 @@ const ItemDetailContainer = ({ id }) => {
   const [product, setProduct] = useState(null);
 
   const getProducts = new Promise((resolve, reject) => {
-    setTimeout(() => {
+    
       if (true) {
         resolve(arrayProducts);
       } else {
         reject('La promesa no se puedo resolver');
       }
-    }, 5000);
+  
   });
 
   const getProductById = async (id) => {
