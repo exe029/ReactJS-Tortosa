@@ -3,7 +3,7 @@ import ItemListContainer from "../Components/ItemListContainer";
 
 const Home = () => {
     return (
-        <main className="bg-purple-900 h-full pb-6">
+        <main className="bg-purple-900 h-min-mainpb-6">
             
             <ItemListContainer />
         </main>

@@ -32,7 +32,7 @@ const ItemListContainer = () => {
   }, [categoryid]);
 
   return (
-    <section className="flex flex-col items-center bg-purple-900 pb-6">
+    <section className="flex flex-col items-center bg-purple-900 pb-6 h-min-main">
       <div className=" py-4 text-center bg-gradient-to-b bg-violet-700 from-violet-500 shadow-md w-full">
         <div className="">
           <h1 className=" font-bold text-xl font-serif">GAMING ZONE</h1>

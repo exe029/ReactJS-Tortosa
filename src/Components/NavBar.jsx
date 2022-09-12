@@ -24,10 +24,10 @@ const NavBar = () => {
           <NavLink to="/">Inicio</NavLink>
           </li>
           <li>
-          <NavLink to="/Juegos/Games">Juegos</NavLink>
+          <NavLink to="/productos/Games">Juegos</NavLink>
           </li>
           <li>
-          <NavLink to="/Juegos/Consolas">Consolas</NavLink>
+          <NavLink to="/productos/Consolas">Consolas</NavLink>
           </li>
           
         </ul>

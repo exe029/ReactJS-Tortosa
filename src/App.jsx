@@ -14,9 +14,7 @@ export default function App() {
       <Routes>
         <Route exact path='/' element={<Home/>}/>
         <Route path="/detail/:productsid" element={<DetailPage />} />
-        <Route exact path='/Juegos/:categoryid' element={<ItemListContainer/>}/>
-        <Route exact path='/Consolas/:categoryid' element={<ItemListContainer/>}/>
-
+        <Route exact path="/productos/:categoryid" element={<ItemListContainer />}/>
         
       
       </Routes>
