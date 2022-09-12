@@ -5,6 +5,8 @@ import { arrayProducts } from '../assets/data/products';
 import PacmanLoader from 'react-spinners/PacmanLoader';
 import { useParams } from 'react-router-dom';
 
+//ItemDetailContainer recibe por prop un id, que deberá ser el id de un producto determinado
+
 const ItemDetailContainer = ({ id }) => {
   const [product, setProduct] = useState(null);
   

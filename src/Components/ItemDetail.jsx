@@ -1,6 +1,8 @@
 import React from 'react';
 import ItemCount from './ItemCount';
 
+//ItemDetail recibe los datos del producto encontrado por id previamente y los muestra
+
 const ItemDetail = ({ product }) => {
   const onAdd = (qty) => {
     alert(`Agregaste ${qty} productos`)

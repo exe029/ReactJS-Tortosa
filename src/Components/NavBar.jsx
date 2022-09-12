@@ -10,7 +10,8 @@ const NavBar = () => {
         <header className="w-full flex justify-between items-center py-6 px-4 bg-[url('https://images.pexels.com/photos/3165335/pexels-photo-3165335.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')]">
         
         <div className="cursor-pointer">
-        
+          
+        {/* Botón de menú  */}
         <NavLink to="/">
           <img className="w-14 h-14 " src={brand} alt="logo" />
         </NavLink>

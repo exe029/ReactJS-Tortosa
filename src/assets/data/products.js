@@ -1,3 +1,5 @@
+/*En este archivo al que he llamado product.js, he declarado una constante con un array de productos, el cual a la vez estoy exportando con la palabra reservada "export" de esa manera podré importarla desde el componente que así lo requiera*/
+
 export const arrayProducts = [
     {
         id:1,
