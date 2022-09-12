@@ -6,6 +6,7 @@ import Footer from './Components/Footer';
 import ItemListContainer from './Components/ItemListContainer';
 import DetailPage from './Pages/DetailPage';
 
+
 export default function App() {
   return (
       <BrowserRouter>

@@ -4,7 +4,7 @@ import { arrayProducts } from '../assets/data/products';
 import { useParams } from 'react-router-dom';
 
 
-const ItemListContainer = ({ title }) => {
+const ItemListContainer = () => {
   const [products, setProducts] = useState([]);
 
   const {categoryid}= useParams();
@@ -33,9 +33,9 @@ const ItemListContainer = ({ title }) => {
 
   return (
     <section className="flex flex-col items-center bg-purple-900 pb-6">
-      <div className=" py-4 text-center bg-gradient-to-b from-violet-500 shadow-md w-full">
+      <div className=" py-4 text-center bg-gradient-to-b bg-violet-700 from-violet-500 shadow-md w-full">
         <div className="">
-          <h1 className=" font-bold text-xl font-serif">{title}</h1>
+          <h1 className=" font-bold text-xl font-serif">GAMING ZONE</h1>
           <p className="text-lg text-slate-100">¡Es hora de jugar!</p>
         </div>
       </div>
