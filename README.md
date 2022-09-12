@@ -30,6 +30,10 @@ Si bien todas las dependencias se instalan con el comando `npm install` a contin
 | Vite                | Herramienta de compilación para React JS | [Link](https://vitejs.dev/guide/)                            |
 
 
+
+## GIF de Navegacion
+
+
 ![ReactJS-GIF](/src/assets/GIF/Animation.gif)
 
 
