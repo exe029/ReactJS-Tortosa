@@ -3,10 +3,13 @@ import { FaCartPlus } from "react-icons/fa";
 
 
 
+
 const CardWitget = () => {
     return (
         <div className="cart-widget">
-            <div><FaCartPlus size="2rem" color="white"/></div>
+            
+            <FaCartPlus className="cursor-pointer" size="2rem" color="white"/>
+            
         </div>
     );
 };

@@ -26,7 +26,7 @@ const ItemCount = ({ onAdd, initial, stock }) => {
             +
             </button>
         <button
-          className="bg-slate-100 p-1 border-black font-bold text-base  text-black rounded-md cursor-pointer disabled:opacity-40"
+          className="bg-slate-100 p-1 border-black font-bold text-base cursor-pointer hover:shadow-md hover:bg-violet-500 text-black rounded-md  disabled:opacity-40"
           onClick={() => {
           onAdd(qty);}}
           disabled={stock === 0 ? true : null}>
