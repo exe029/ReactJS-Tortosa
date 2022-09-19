@@ -1,7 +1,7 @@
 import React from "react";
 import CardWitget from './CartWidget';
 import brand from '../assets/logo_gamer.svg';
-import { NavLink } from 'react-router-dom';
+import { NavLink , Link} from 'react-router-dom';
 
 
 const NavBar = () => {
@@ -33,7 +33,10 @@ const NavBar = () => {
           
         </ul>
       </nav>
+      <Link to="/cart">
+
       <CardWitget/>
+      </Link>
       {/* logo de la marca */}
       
 

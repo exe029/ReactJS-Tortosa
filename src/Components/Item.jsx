@@ -8,16 +8,16 @@ const Item = ({ product }) => {
     
 
 
-        <div className='flex flex-col flex-nowrap p-1 items-center rounded-md bg-cyan-700 border-2 border-black'>
              <Link to={`/detail/${product.id}`}>
+        <div className='flex flex-col flex-nowrap p-1 items-center rounded-md bg-neutral-200 border-2 border-black hover:bg-violet-300'>
             <h3 className=' w-full text-center text-lg font-bold uppercase '>{ product.name }</h3>
-             </Link>
-            <img className='w-48 h-48  bg-slate-600 uppercase;' src= {product.img} alt="" />
-            <h3 className='bg-slate-400 w-full text-center uppercase'>{ product.price }</h3>
-            <h3 className='bg-slate-300 w-full text-center uppercase'>{ product.category }</h3>
-            <h3 className='bg-slate-600 w-full text-center uppercase'>{ product.platforms }</h3>
+            <img className='w-48 h-48 border-spacing-0 border-2 rounded-md border-gray-600 hover:scale-105 ;' src= {product.img} alt="" />
+            <h3 className='bg-neutral-100 w-full text-center text-black font-bold capitalize'>Usd { product.price }</h3>
+            
+            <h3 className='bg-neutral-100 w-full text-center text-black font-bold uppercase'>{ product.platforms }</h3>
             
         </div>
+             </Link>
         
     
   
