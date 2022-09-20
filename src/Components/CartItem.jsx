@@ -1,9 +1,9 @@
 import React from "react";
 import { FaTrashAlt } from "react-icons/fa";
 
-const CartItem = ({item, removeItemById}) => {
+const CartItem = ({item, removeItemById,}) => {
     
-
+    
     return (
         /*<article className="grid grid-cols-4 gap-4">
            <div className="item-center text-center p-2">Product:
@@ -23,7 +23,8 @@ const CartItem = ({item, removeItemById}) => {
                 </div>
                 </article>*/
 
-    
+    <div>
+
         <table className=" table-fixed w-full border border-slate-400 border-separate border-spacing-2 hover:bg-violet-400">
             
             <tbody>
@@ -31,12 +32,15 @@ const CartItem = ({item, removeItemById}) => {
                     <td>{item.name}</td>
                     <td>Usd {item.price}</td>
                     <td>{item.qty}</td>
-                    <td>${item.qty * item.price}</td>
+                    <td>Usd {item.qty * item.price}</td>
                     <td><FaTrashAlt className="w-full h-4 cursor-pointer hover:scale-90" onClick={()=>removeItemById(item.id)}></FaTrashAlt></td>
-                </tr>
+                </tr>                
+                
             </tbody>
         </table>
+        
 
+    </div>
    
 
 
