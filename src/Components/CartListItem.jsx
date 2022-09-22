@@ -48,7 +48,7 @@ const CartListItem = () => {
                   <td></td>
                   <td>total</td>
                   <td>Usd {getTotalPrice(cart)}</td>
-                  <td className='inline-block'><button className="flex items-center rounded-md border-solid border-2 p-1 font-semibold bg-violet-300 hover:bg-black hover:text-white border-black hover:scale-90"
+                  <td className='inline-block'><button className="flex items-center rounded-md border-solid border-2 p-1 font-semibold bg-violet-300 hover:bg-black hover:text-white border-black hover:scale-90 duration-700"
                       onClick={deleteCart}> 
                       <p className='pr-1'>Vaciar</p><TbShoppingCartOff/>
                         

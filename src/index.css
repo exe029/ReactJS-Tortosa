@@ -3,5 +3,6 @@
 @tailwind utilities;
 
 .h-min-main {
-    min-height: calc(100vh - 184px);
+    min-height: calc(100vh - 272px);
   }
+

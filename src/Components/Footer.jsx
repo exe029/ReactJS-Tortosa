@@ -18,14 +18,14 @@ const Footer = () => {
                 </div>
                 <div className="flex flex-row pr-16 gap-14">
                     <a href="https://wa.me/+5493512432745" target="_blank">
-                        <FaWhatsapp className="cursor-pointer" size="1.5rem" color="white" />
+                        <FaWhatsapp className="cursor-pointer hover:scale-110 duration-500" size="1.5rem" color="white" />
                     </a>
-                        <FaInstagram className="cursor-pointer " size="1.5rem" color="white" />
+                        <FaInstagram className="cursor-pointer hover:scale-110 duration-500 " size="1.5rem" color="white" />
                     <a href="https://www.linkedin.com/in/exequieltortosa/" target="_blank">
-                        <FaLinkedin className="cursor-pointer" size="1.5rem" color="white" />
+                        <FaLinkedin className="cursor-pointer hover:scale-110 duration-500" size="1.5rem" color="white" />
                     </a>
                     <a href="https://github.com/exe029" target="_blank">
-                        <FaGithub className="cursor-pointer" size="1.5rem" color="white"/>
+                        <FaGithub className="cursor-pointer hover:scale-110 duration-500" size="1.5rem" color="white"/>
                     </a>
             
                 </div>

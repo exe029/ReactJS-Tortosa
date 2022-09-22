@@ -18,10 +18,10 @@ const ItemDetail = ({ product }) => {
     setAddCart(true);
   };
   return (
-    <div className="flex w-1/2  bg-neutral-200 justify-evenly gap-2 items-center p-1 rounded-lg border-2">
+    <div className="flex w-1/2  bg-neutral-300 justify-evenly gap-2 items-center p-1 rounded-lg border-black border-2">
       <div className="w-1/2 h-4/5 rounded-xl p-2 overflow-hidden">
         <img
-          className="w-3/4 h-full object-fill p-2 border-2 border-black hover:scale-105"
+          className="w-3/4 h-full object-fill p-2 border-2 border-black hover:scale-105 duration-300"
           src={product.img}
           alt=""
         />

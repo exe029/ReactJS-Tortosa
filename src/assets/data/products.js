@@ -49,7 +49,7 @@ export const arrayProducts = [
         stock: 6,
         price:40,
         img:'https://gorilagames.com/img/Public/1019-producto-wrc10-7158.jpg',
-        description:'WRC 10 es el videojuego oficial del Campeonato Mundial de Rally para la temporada 2021, un simulador de carreras todoterreno que busca reinventarse permitiendo a los jugadores revivir los momentos más intensos al volante de coches icónicos para celebrar los 50 años de la competición,',
+        description:'WRC 10 es el videojuego oficial del Campeonato Mundial de Rally para la temporada 2021, un simulador de carreras todoterreno que busca reinventarse permitiendo a los jugadores revivir los momentos más intensos al volante de coches icónicos para celebrar los 50 años de la competición.',
         platforms: ['ps4'],
     },
 
@@ -71,8 +71,8 @@ export const arrayProducts = [
         stock: 3,
         price:550,
         img:'https://gorilagames.com/img/Public/1019-producto-ps4-slim-megapack-13-death-stranding-gof-of-war-gta-1-4447.jpg',
-        description:'Lorem ipsum dolor',
-        platforms: ['-'],
+        description:'Consola ps4 con 3 juegos',
+        platforms: ['ps4'],
     },
 
     {
@@ -82,7 +82,7 @@ export const arrayProducts = [
         stock: 2,
         price:600,
         img:'https://gorilagames.com/img/Public/1019-producto-xbox-series-s-7041.jpg',
-        description:'Lorem ipsum dolor',
-        platforms: ['-'],
+        description:'Consola x-box s',
+        platforms: ['x-box'],
     },
 ]
