@@ -1,5 +1,5 @@
-/*En este archivo al que he llamado product.js, he declarado una constante con un array de productos, el cual a la vez estoy exportando con la palabra reservada "export" de esa manera podré importarla desde el componente que así lo requiera*/
-
+/*En este archivo al que he llamado product.js, he declarado una constante con un array de productos, el cual a la vez estoy exportando con la palabra reservada "export" de esa manera podré importarla desde el componente que así lo requiera
+*/
 export const arrayProducts = [
     {
         id:1,
@@ -83,6 +83,8 @@ export const arrayProducts = [
         price:600,
         img:'https://gorilagames.com/img/Public/1019-producto-xbox-series-s-7041.jpg',
         description:'Consola x-box s',
-        platforms: ['x-box'],
+        platforms: ['x-box'], 
     },
+        
 ]
+        
