@@ -39,8 +39,6 @@ const CartItem = ({item, removeItemById}) => {
                 
             </tbody>
         </table>
-        
-
     </div>
    
 
