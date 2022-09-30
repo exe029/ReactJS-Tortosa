@@ -69,6 +69,10 @@ const CartListItem = () => {
             </Link>
           </div>
         )}
+        <Link to="/checkout">
+        <button className='p-2 rounded-md border-solid border-2 m-8 font-semibold bg-violet-300 hover:bg-black hover:text-white border-black hover:scale-90 duration-700'
+        >Siguiente</button>
+        </Link>
       </div>
     </section>
   );

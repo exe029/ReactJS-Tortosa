@@ -1,6 +1,5 @@
 import React from 'react';
 import Item from './Item';
-
 import PacmanLoader from 'react-spinners/PacmanLoader';
 
 const ItemList = ({ products }) => {
