@@ -93,6 +93,7 @@ const CartForm = () => {
           name="fname"
           value={fname}
           onChange={handleInputChange}
+          required
         />
       </div>
       <div className="form__group">
@@ -101,6 +102,7 @@ const CartForm = () => {
           name="lname"
           value={lname}
           onChange={handleInputChange}
+          required
         />
       </div>
       <div className="form__group">
@@ -109,6 +111,7 @@ const CartForm = () => {
           name="email"
           value={email}
           onChange={handleInputChange}
+          required
         />
       </div>
       
