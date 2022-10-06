@@ -42,7 +42,7 @@ const ItemDetail = ({ product }) => {
           {addCart ? (
             <Link
               to="/cart"
-              className="text-base font-semibold underline text-fuchsia-800"
+              className="p-2 rounded-md border-solid border-2 m-8 font-semibold bg-violet-300 hover:bg-black hover:text-white border-black hover:scale-90 duration-700"
             >
               Finalizar mi compra
             </Link>
