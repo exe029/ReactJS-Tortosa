@@ -19,7 +19,6 @@ const AppRoutes = () => {
         <Route exact path='/cart' element={<CartPage/>}/>
         <Route exact path="/productos/:categoryid" element={<ItemListContainer />}/>
         <Route exact path='/checkout' element={<Checkout/>}/>
-      
       </Routes>
         <Footer />
       

@@ -1,7 +1,7 @@
 import React from 'react';
 import CardWitget from './CartWidget';
 import brand from '../assets/logo_gamer.svg';
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
   return (

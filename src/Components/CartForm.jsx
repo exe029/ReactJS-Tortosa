@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { isEmail, isEmpty } from 'validator';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { CartContext } from '../Context/CartContext';
 import { getTotalPrice } from '../helpers/calculateFunctions';
 import { createItem, deleteItem } from '../helpers/firebaseHelpers';
@@ -21,7 +21,7 @@ const CartForm = () => {
     email: '',
   });
 
-  const { fname, lname, email, address } = formValues;
+  const { fname, lname, email } = formValues;
 
   const dataOrder = {
     buyer: formValues,
@@ -60,8 +60,9 @@ const CartForm = () => {
   const cancelOrder = async () => {
     try {
       const response = await deleteItem(orderNumber, 'orders');
-
+      presentToast('La orden a sido Cancelada');
       navigate('/');
+      return;
     } catch (error) {}
   };
 
@@ -79,11 +80,17 @@ const CartForm = () => {
               </h2>
 
               <button
-                className="button button-primary m-8 p-2 rounded-md border-solid border-2  font-semibold bg-violet-300 hover:bg-black hover:text-white border-black hover:scale-90 duration-700"
+                className="button button-primary m-8 p-2 text-blue-400"
                 onClick={cancelOrder}
               >
                 Cancelar orden
               </button>
+              <Link
+              to="/"
+              className="p-2 rounded-md border-solid border-2 m-8 font-semibold bg-violet-300 hover:bg-blue-500 hover:text-white border-black hover:scale-105 duration-700"
+            >
+              Volver al Inicio
+            </Link>
             </div>
           ) : (
             <div className="flex flex-col items-center m-48">
@@ -93,14 +100,17 @@ const CartForm = () => {
           )}
         </>
       ) : (
+        
         <form
-          className="flex flex-col place-items-end p-2 font-medium"
+          className="flex flex-col place-items-center p-2 font-medium"
           onSubmit={handleSubmit}
         >
-          
+          <h2 className="text-2xl p-8 capitalize m-2 bg-neutral-100 rounded-md">
+            Ingresa tus datos para terminar la compra
+          </h2>
           <div >
             <label className="text-lg" htmlFor="">
-              First Name:{' '}
+              First Name :{' '}
             </label>
             <input
               className="rounded-md border-2 p-1 border-gray-500 m-2"
@@ -112,7 +122,7 @@ const CartForm = () => {
           </div>
           <div >
             <label className="text-lg" htmlFor="">
-              Last Name:{' '}
+              Last Name :{' '}
             </label>
             <input
               className="rounded-md border-2 p-1 border-gray-500 m-2"
@@ -123,8 +133,8 @@ const CartForm = () => {
             />
           </div>
           <div >
-            <label className="text-lg" htmlFor="">
-              Email:{' '}
+            <label className="text-lg p-6" htmlFor="">
+              Email :{' '}
             </label>
             <input
               className="rounded-md border-2 p-1 border-gray-500 m-2"
@@ -137,7 +147,7 @@ const CartForm = () => {
 
           <button
             type="submit"
-            className="rounded-md border-solid border-2 p-2 mt-6 mr-12 font-semibold bg-violet-300 hover:bg-black hover:text-white border-black hover:scale-90 duration-700"
+            className="rounded-md border-solid border-2 p-2 mt-6 font-semibold bg-violet-300 hover:bg-blue-500 hover:text-white border-black hover:scale-105 duration-700"
           >
             Finalizar compra
           </button>

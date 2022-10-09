@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react';
 import ItemList from './ItemList';
-
 import { useParams } from 'react-router-dom';
 import { getItems, getItemsByCondition } from '../helpers/firebaseHelpers';
 
@@ -12,7 +11,6 @@ const ItemListContainer = () => {
   const getProductsFromFB = async () => {
     if (!categoryid) {
       const data = await getItems('games');
-      //console.log(data);
       setProducts(data);
     } else {
       const data = await getItemsByCondition(

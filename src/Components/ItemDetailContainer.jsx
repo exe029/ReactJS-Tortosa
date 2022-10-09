@@ -1,11 +1,10 @@
 import { useEffect } from 'react';
 import { useState } from 'react';
 import ItemDetail from './ItemDetail';
-
 import PacmanLoader from 'react-spinners/PacmanLoader';
 import { useParams } from 'react-router-dom';
 import { getItemById } from '../helpers/firebaseHelpers';
-//ItemDetailContainer recibe por prop un id, que deberá ser el id de un producto determinado
+
 
 const ItemDetailContainer = ({ id }) => {
   const [product, setProduct] = useState(null);
