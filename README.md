@@ -28,13 +28,18 @@ Si bien todas las dependencias se instalan con el comando `npm install` a contin
 | TailwindCSS         | Framework UI                             | [Link](https://tailwindcss.com/docs/installation/framework-guides) |
 | React Spinner       | Spinner para loadings                    | [Link](https://www.davidhu.io/react-spinners/)               |
 | Vite                | Herramienta de compilación para React JS | [Link](https://vitejs.dev/guide/)                            |
+| Validator           | Herramienta para validaciones            | [Link](https://www.npmjs.com/package/validator)              |
+| SweetAlert2         | Plugin de jQuery,para mejorar los mensajes que lancemos a los users|[Link](https://www.sweetalert2.github.io)   |
+
+
 
 
 
 ## GIF de Navegacion
 
 
-![ReactJS-GIF](/src/assets/GIF/Animation.gif)
+![ReactJS-GIF](/src/assets/GIF/Gif-navegacion.gif)
+
 
 
 
