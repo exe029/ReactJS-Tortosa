@@ -38,7 +38,7 @@ Si bien todas las dependencias se instalan con el comando `npm install` a contin
 ## GIF de Navegacion
 
 
-![ReactJS-GIF](/src/assets/GIF/Gif-navegacion.gif)
+![ReactJS-GIF](./src/assets/GIF/Gif-navegacion.gif)
 
 
 
